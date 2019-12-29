@@ -10,7 +10,7 @@ class Google::Api::DocsV1::TableFactoryTest < Minitest::Test
     table_index = 0
 
 
-    actual = ::Google::Api::DocsV1::TableFactory.insert_table_request(table_data, table_index)
+    actual = ::Google::Api::DocsV1::TableFactory.insert_table_request(index: 0, table_data: table_data)
 
     assert_equal(actual,
       [
@@ -27,7 +27,7 @@ class Google::Api::DocsV1::TableFactoryTest < Minitest::Test
     table_data = [['A1', 'B1', 'C1'], [nil, 'B2', nil], ['A3', 'B3', 'C3']]
     table_index = 0
 
-    actual = ::Google::Api::DocsV1::TableFactory.insert_table_request(table_data, table_index)
+    actual = ::Google::Api::DocsV1::TableFactory.insert_table_request(index: 0, table_data: table_data)
 
     assert_equal(actual,
       [
