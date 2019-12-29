@@ -1,8 +1,32 @@
-# Google::Api::DocsV1::TableFactory
+# Description
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/google/api/docs_v1/table_factory`. To experiment with that code, run `bin/console` for an interactive prompt.
+The purpose of this library is to provide simpler ways for manipulating table and its contents in Google Docs.
 
-TODO: Delete this and the text above, and describe your gem
+This solve for the difficulty myself and [a few others](https://github.com/tanaikech/node-gdoctableapp) had when attempting to manage tables on Google Docs using the Google Docs V1 API. 
+
+## Features
+
+- Create table with values in rows and columns
+
+## Some Missing Features
+
+- Read table values
+- Update table values
+- Delete tables, rows and columns
+
+## Usage
+
+```
+
+```
+
+## Language Support
+
+There are more fleshed out libraries in other languages that I found helpful when researching prior to deciding to build the first piece of the puzzle for Ruby.
+
+- [go-gdoctableapp](https://github.com/tanaikech/go-gdoctableapp)
+- [node-gdoctableapp](https://github.com/tanaikech/node-gdoctableapp)
+- [gdoctableapppy](https://github.com/tanaikech/gdoctableapppy)
 
 ## Installation
 
