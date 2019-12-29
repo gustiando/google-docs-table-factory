@@ -1,15 +1,16 @@
 require "test_helper"
 
-class Google::Docs::TableTest < Minitest::Test
+class Google::Api::DocsV1::TableFactoryTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Google::Docs::Table::VERSION
+    refute_nil ::Google::Api::DocsV1::TableFactory::VERSION
   end
 
   def test_it_has_correct_insert_text_requests_when_table_data_has_all_cells_filled
     table_data = [['A1', 'B1'], ['A2', 'B2']]
     table_index = 0
 
-    actual = ::Google::Docs::Table.create_insert_table_request(table_data, table_index)
+
+    actual = ::Google::Api::DocsV1::TableFactory.insert_table_request(table_data, table_index)
 
     assert_equal(actual,
       [
@@ -26,7 +27,7 @@ class Google::Docs::TableTest < Minitest::Test
     table_data = [['A1', 'B1', 'C1'], [nil, 'B2', nil], ['A3', 'B3', 'C3']]
     table_index = 0
 
-    actual = ::Google::Docs::Table.create_insert_table_request(table_data, table_index)
+    actual = ::Google::Api::DocsV1::TableFactory.insert_table_request(table_data, table_index)
 
     assert_equal(actual,
       [

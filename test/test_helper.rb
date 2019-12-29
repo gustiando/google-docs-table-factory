@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
-require "google/docs/table"
+require "google/api/docs_v1/table_factory"
 
 require "minitest/autorun"
 require "minitest/reporters"

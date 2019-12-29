@@ -1,21 +1,21 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "google/docs/table/version"
+require "google/api/docs_v1/table_factory/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "google-docs-table"
-  spec.version       = Google::Docs::Table::VERSION
+  spec.name          = "google-docs-table-factory"
+  spec.version       = Google::Api::DocsV1::TableFactory::VERSION
   spec.authors       = ["Gustavo Matias"]
   spec.email         = ["gustavo@matias.love"]
 
   spec.summary       = "Ruby library for managing tables on Google Documents using the Google API"
   # spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "https://github.com/gumatias/google-docs-table"
+  spec.homepage      = "https://github.com/gumatias/google-docs-table-factory"
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/gumatias/google-docs-table"
+  spec.metadata["source_code_uri"] = "https://github.com/gumatias/google-docs-table-factory"
   # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
