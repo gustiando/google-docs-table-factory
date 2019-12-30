@@ -6,11 +6,11 @@
 
 The purpose of this library is to provide simpler ways for manipulating table and its contents in Google Docs.
 
-This solve for the difficulty myself and [a few others](https://github.com/tanaikech/node-gdoctableapp) had when attempting to manage tables on Google Docs using the Google Docs V1 API. 
+This solves for the difficulty myself and [a few others](https://github.com/tanaikech/node-gdoctableapp) had when attempting to manage tables on Google Docs using the Google Docs V1 API. Initially, using arrays seems to be more natural.
 
 ## Features
 
-- Create table with values in rows and columns
+- Create table with values in rows and columns from an array
 
 ## Some Missing Features
 
@@ -44,7 +44,7 @@ Or install it yourself as:
 
 ## Usage
 
-### Create table with values in rows and columns
+### Create table with values in rows and columns from an array
 
 ```
 requests = ::Google::Api::DocsV1::TableFactory.insert_table_request(
