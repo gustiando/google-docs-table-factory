@@ -9,14 +9,15 @@ Gem::Specification.new do |spec|
   spec.email         = ["gustavo@matias.love"]
 
   spec.summary       = "Ruby library for managing tables on Google Documents using the Google API"
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "https://github.com/gumatias/google-docs-table-factory"
+  spec.description   = %q{
+    The purpose of this library is to provide simpler ways for manipulating table and its contents in Google Docs.
 
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    This solve for the difficulty myself and a few others had when attempting to manage tables on Google Docs using the Google Docs V1 API.
+  }
+  spec.homepage      = "https://github.com/gumatias/google-docs-table-factory"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/gumatias/google-docs-table-factory"
-  # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
