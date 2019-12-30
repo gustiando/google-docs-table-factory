@@ -1,3 +1,7 @@
+<p align="left">
+  <img width="300" height="100" src="https://user-images.githubusercontent.com/681278/71566363-f0273980-2aae-11ea-9b30-3d328f3c1aff.jpg">
+</p>
+
 # Description
 
 The purpose of this library is to provide simpler ways for manipulating table and its contents in Google Docs.
